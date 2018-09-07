@@ -1,4 +1,22 @@
-<button mat-icon-button>
+<mat-toolbar color="warn" class="top-line"></mat-toolbar>
+<mat-toolbar color="primary">
+  <button mat-icon-button>
     <mat-icon>home</mat-icon>
   </button>
+  <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+    <ul fxLayout fxLayoutGap="20px" class="top-navigation-bar-items">
+      <li><a routerLink="/signin">About</a></li>
+      <li><a routerLink="/signin">Blog</a></li>
+      <li><a routerLink="/signin">List Your Business</a></li>
+    </ul>
+  </div>
+</mat-toolbar>
+
+  <!--mat-sidenav-container class="weblet-container" >
+    <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
+    <mat-sidenav-content fxLayout="row">
+      <mat-toolbar><a href="/signin" >signin</a></mat-toolbar>
+      <main></main>
+    </mat-sidenav-content>
+  </mat-sidenav-container-->
 <router-outlet></router-outlet>
